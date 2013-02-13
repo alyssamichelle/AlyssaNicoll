@@ -1,0 +1,18 @@
+%h1 Journal
+
+%ul
+  - @posts.each do |post|
+    %li
+      %h3.postTitle
+        = post.title
+      %p.postContent
+        = post.content
+        
+      = link_to 'Show', post
+      = link_to 'Edit', edit_post_path(post)
+      = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+
+      %div.date
+        = post
+
+= link_to 'New Post', new_post_path

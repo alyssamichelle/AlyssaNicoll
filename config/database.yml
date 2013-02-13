@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: portfolio_development
+  pool: 5
+  username: alyssa
+  password: ""
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: portfolio_test
+  pool: 5
+  username: alyssa
+  password: ""
+  host: localhost
+
