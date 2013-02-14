@@ -131,7 +131,6 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
-  compass
   compass-rails
   formtastic (~> 2.2.1)
   haml-rails (~> 0.3.4)
