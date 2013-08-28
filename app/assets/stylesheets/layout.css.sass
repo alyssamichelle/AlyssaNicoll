@@ -1,21 +1,56 @@
-$blueprint-grid-column: 24
-$blueprint-grid-width: 30px
-$blueprint-grid-margin: 10px
-
 html
   font-size: 10px
 
 body
-  background-color: #eee
-  font-family: "Helvetica Neue"
+  width: 80%
+  max-width: 70em
+  margin: 4em auto
+  background-color: $light-grey
+  color: $dark-grey
+  font-family: Baskerville, serif
+
+h1, h2, h3, h4
+  margin-bottom: 0.5em
+  font-weight: bold
 
 h1
-  font-size: 3em
-  font-weight: 800
+  font-size: 4.8em
 
-#wrapper
-  +container
+h2
+  font-size: 3.6em
+
+h3
+  font-size: 2.8em
+
+h4
+  font-size: 2.2em
+
+p, ul, hr
+  margin-bottom: 2em
+  font-size: 1.7em
+
+ul
+  margin-bottom: 3em
 
 li
-  padding: 20px 0
-  list-style: none
+  margin-bottom: 1em
+  list-style: inside disc
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+a
+  color: $dark-grey
+  text-decoration: underline
+  &:hover, &:focus
+    color: tint($dark-grey, 15%)
+  &:active
+    color: shade($dark-grey, 25%)
+
+hr
+  border: none
+  border-top: 1px solid #ccc
+  border-bottom: 1px solid #fff
