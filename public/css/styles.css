@@ -8,24 +8,33 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-  line-height: 1;
+  line-height: 1.1;
   font-size: 14px;
+  font-weight: 300;
 }
 
 body {
-  width: 80%;
-  max-width: 70em;
-  margin: 4em auto;
   background-color: #f2f2f2;
   color: #3c3c3c;
   font-family: Roboto, serif;
   font-weight: 400;
 }
 
+#wrapper {
+  width: 80%;
+  max-width: 70em;
+  margin: 4em auto;
+  padding: 4.5em;
+  /*-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;*/
+  background: #f2f2f2;
+  /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
 h1, h2, h3, h4 {
   margin-bottom: 0.5em;
   font-weight: bold;
-
   font-family: Roboto Slab, sans-serif;
 }
 
@@ -73,13 +82,16 @@ hr {
   border-bottom: 1px solid #FFF;
 }
 
-.wrapper {
-  padding: 4.5em;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5em;
-  background: #f2f2f2;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+/* Inspiration Block, top of index pg */
+
+.images {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.inspire-block {
+  position: relative;
 }
 
 .quote {
@@ -87,6 +99,9 @@ hr {
   font-size: 5em;
   text-align: center;
   font-weight: 100;
+  color: #FFF;
+  margin-bottom: 0;
+  line-height: 2em;
 }
 
 .quote.punchline {
@@ -106,10 +121,15 @@ hr {
 
 .section-title {
   margin-top: 200px;
+  text-transform: uppercase;
 }
 
 .center-align {
   text-align: center;
+}
+
+.emphasis {
+  font-weight: 100;
 }
 
 /* Under Construction Sign Styles */
