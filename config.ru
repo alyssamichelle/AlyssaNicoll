@@ -1,3 +1,4 @@
+# encoding: UTF-8
 use Rack::Static,
   :urls => ["/images", "/js", "/css"],
   :root => "public"
