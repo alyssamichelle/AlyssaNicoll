@@ -144,6 +144,12 @@ hr {
   background-size: cover;
 }
 
+.birthday-block {
+  padding-top: 100px;
+  background: RebeccaPurple url('../images/me_and_mom.jpg') no-repeat center center;
+  background-size: cover;
+}
+
 .quote {
   font-size: 3em;
 }
@@ -164,4 +170,10 @@ hr {
 
 .quote.credit {
   font-size: 1.5em;
+}
+
+.signature {
+  margin-top: 0;
+  font-family: 'Zeyada', cursive;
+  font-size: 5em;
 }
